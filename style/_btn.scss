@@ -1,0 +1,42 @@
+@use "variables" as v;
+@use "sass:color";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 269px;
+  height: 61px;
+  border-radius: 33px;
+  box-shadow: 0px 2px 0px 0px rgb(212, 102, 28),
+    inset 0px 4px 0px -2px rgba(236, 214, 87, 0.6);
+
+  background: linear-gradient(
+    131.67deg,
+    rgb(209, 90, 26) 5.402%,
+    rgb(234, 180, 37) 48.297%,
+    rgb(236, 216, 90) 95.906%
+  );
+
+  color: v.$font_color_black;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 17px;
+
+  transition: transform 0.5s, box-shadow 0.1s, opaciti 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 80px 10px rgba(236, 214, 87, 0.6);
+    opacity: 0.7;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

@@ -86,6 +86,152 @@ h6 {
   font-weight: inherit;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 269px;
+  height: 61px;
+  border-radius: 33px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgb(212, 102, 28), inset 0px 4px 0px -2px rgba(236, 214, 87, 0.6);
+          box-shadow: 0px 2px 0px 0px rgb(212, 102, 28), inset 0px 4px 0px -2px rgba(236, 214, 87, 0.6);
+  background: linear-gradient(131.67deg, rgb(209, 90, 26) 5.402%, rgb(234, 180, 37) 48.297%, rgb(236, 216, 90) 95.906%);
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 17px;
+  -webkit-transition: opaciti 0.2s, -webkit-transform 0.5s, -webkit-box-shadow 0.1s;
+  transition: opaciti 0.2s, -webkit-transform 0.5s, -webkit-box-shadow 0.1s;
+  transition: transform 0.5s, box-shadow 0.1s, opaciti 0.2s;
+  transition: transform 0.5s, box-shadow 0.1s, opaciti 0.2s, -webkit-transform 0.5s, -webkit-box-shadow 0.1s;
+}
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 80px 10px rgba(236, 214, 87, 0.6);
+          box-shadow: 0px 0px 80px 10px rgba(236, 214, 87, 0.6);
+  opacity: 0.7;
+}
+.btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.header {
+  background: url(/assets/webp/1_sun_right_cover.webp) 100% 0%/cover no-repeat;
+}
+.header .header__wrapper {
+  height: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header .header__wrapper .header__logo {
+  width: 285px;
+  height: 135px;
+}
+.header .header__wrapper .header__order-szd {
+  display: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 250;
+}
+.header .header__wrapper .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+.header .header__wrapper .header__body .header__title {
+  max-width: 800px;
+  font-size: 96px;
+  font-weight: 250;
+}
+.header .header__wrapper .header__body .header__description {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: url(/assets/webp/1_sun_right_cover.webp) 85% 50px/cover no-repeat;
+    position: relative;
+  }
+  .header .header__wrapper {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header .header__wrapper .header__logo {
+    position: absolute;
+    top: 1px;
+    width: 93px;
+    height: 44px;
+  }
+  .header .header__wrapper .header__order-szd {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .header .header__wrapper .header__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+  .header .header__wrapper .header__body .header__title {
+    max-width: 380px;
+    font-size: 40px;
+    font-weight: 30;
+  }
+  .header .header__wrapper .header__body .header__description {
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+}
 html {
   color: #ffffff;
   font-family: Roboto;
@@ -99,4 +245,5 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 36px;
 }/*# sourceMappingURL=index.css.map */
