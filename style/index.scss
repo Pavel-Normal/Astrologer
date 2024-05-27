@@ -2,6 +2,16 @@
 @use "importer";
 @use "sass:color";
 
-// body {
-//   background: v.$main_color_black;
-// }
+html {
+  color: v.$font_color_wihte;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+body {
+  background: v.$main_color_black;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
