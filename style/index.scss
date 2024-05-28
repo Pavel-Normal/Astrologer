@@ -1,6 +1,5 @@
 @use "variables" as v;
 @use "importer";
-@use "sass:color";
 
 html {
   color: v.$font_color_wihte;

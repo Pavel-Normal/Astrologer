@@ -266,6 +266,26 @@ h6 {
   font-weight: 250;
   line-height: 42px;
 }
+@media (max-width: 576px) {
+  .sun .sun__wrapper .sun__title {
+    max-width: 200px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 47px;
+  }
+  .sun .sun__wrapper .sun__description {
+    font-size: 24px;
+    font-weight: 250;
+    line-height: 30px;
+  }
+}
+@media (max-width: 428px) {
+  .sun .sun__wrapper .sun__description {
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 21px;
+  }
+}
 
 @media (max-width: 768px) {
   .sun {
@@ -279,17 +299,6 @@ h6 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-  .sun .sun__wrapper .sun__title {
-    max-width: 200px;
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 47px;
-  }
-  .sun .sun__wrapper .sun__description {
-    font-size: 18px;
-    font-weight: 250;
-    line-height: 21px;
   }
 }
 html {
