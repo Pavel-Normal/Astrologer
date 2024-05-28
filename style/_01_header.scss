@@ -2,8 +2,7 @@
 @use "sass:color";
 
 .header {
-  background: url(./assets/webp/1_sun_right_cover.webp) 100% 0% / cover
-    no-repeat;
+  background: url(/assets/webp/1_sun_right_cover.webp) 100% 0% / cover no-repeat;
 
   .header__wrapper {
     height: 1024px;
@@ -46,7 +45,7 @@
 
 @media (max-width: v.$media_md) {
   .header {
-    background: url(./assets/webp/1_sun_right_cover.webp) 85% 50px / cover
+    background: url(/assets/webp/1_sun_right_cover.webp) 85% 50px / cover
       no-repeat;
 
     position: relative;
