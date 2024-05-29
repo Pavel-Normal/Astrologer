@@ -305,18 +305,21 @@ h6 {
 .feeling-cards {
   padding: 115px 0 0 0;
 }
-@media (max-width: 768px) {
-  .feeling-cards {
-    background: url(/assets/webp/3_lack_of_desires_david.webp) 100px 0%/contain no-repeat;
-  }
-}
 .feeling-cards .feeling-cards__title {
   font-size: 72px;
   font-weight: 300;
   color: #f3d7b3;
 }
+@media (max-width: 576px) {
+  .feeling-cards .feeling-cards__title {
+    font-size: 36px;
+    font-weight: 300;
+  }
+}
 .feeling-cards .feeling-cards__wrapper {
-  padding: 140px 0 0 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 140px 36px 0 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,10 +332,48 @@ h6 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 230px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .feeling-cards .feeling-cards__wrapper {
+    padding: 80px 0 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 0px;
+  }
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__mob-img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__mob-img {
+    display: block;
+    width: 600px;
+    position: absolute;
+    top: -17%;
+    right: -20%;
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+}
+@media (max-width: 576px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__mob-img {
+    width: 400px;
+    top: -10%;
+    right: -20%;
+  }
+}
+@media (max-width: 428px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__mob-img {
+    width: 350px;
+    top: -13%;
+    right: -20%;
+  }
 }
 .feeling-cards .feeling-cards__wrapper .feeling-cards__item {
   height: 300px;
@@ -343,14 +384,27 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 768px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item {
+    height: 250px;
+    background: rebeccapurple;
+  }
+}
+@media (max-width: 428px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item {
+    height: 180px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.05)), to(rgba(226, 226, 226, 0.02)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(226, 226, 226, 0.02) 100%);
+  }
 }
 .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body {
   max-width: 560px;
@@ -368,15 +422,39 @@ h6 {
           align-items: start;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body {
+    max-width: 100%;
+    padding: 0 36px;
+  }
+}
+@media (max-width: 428px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body {
+    gap: 5px;
+  }
+}
 .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-title {
   font-size: 36px;
   font-weight: 300;
   line-height: 42px;
 }
+@media (max-width: 576px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
 .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-description {
   font-size: 35px;
   font-weight: 250;
   line-height: 41px;
+}
+@media (max-width: 576px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-description {
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 21px;
+  }
 }
 .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-img {
   max-height: 300px;

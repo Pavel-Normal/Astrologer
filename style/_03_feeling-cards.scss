@@ -2,31 +2,80 @@
 
 .feeling-cards {
   padding: 115px 0 0 0;
-  @media (max-width: v.$media_md) {
-    background: url(/assets/webp/3_lack_of_desires_david.webp) 100px 0% /
-      contain no-repeat;
-  }
+
   .feeling-cards__title {
     font-size: 72px;
     font-weight: 300;
     color: v.$font_color_light-orange;
+
+    @media (max-width: v.$media_sm) {
+      font-size: 36px;
+      font-weight: 300;
+    }
   }
 
   .feeling-cards__wrapper {
-    padding: 140px 0 0 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 140px 36px 0 36px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     gap: 230px;
+    position: relative;
+
+    @media (max-width: v.$media_md) {
+      padding: 80px 0 0 0;
+      align-items: start;
+      gap: 0px;
+    }
+
+    .feeling-cards__mob-img {
+      display: none;
+
+      @media (max-width: v.$media_md) {
+        display: block;
+        width: 600px;
+        position: absolute;
+        top: -17%;
+        right: -20%;
+        transform: rotate(-22deg);
+      }
+
+      @media (max-width: v.$media_sm) {
+        width: 400px;
+        top: -10%;
+        right: -20%;
+      }
+
+      @media (max-width: v.$media_min) {
+        width: 350px;
+        top: -13%;
+        right: -20%;
+      }
+    }
+
     .feeling-cards__item {
       height: 300px;
       display: flex;
       flex-direction: row;
-      align-content: center;
+      align-content: start;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: v.$media_md) {
+        height: 250px;
+        //  background: v.$main_color_wihte-grad;
+        background: rebeccapurple;
+      }
+
+      @media (max-width: v.$media_min) {
+        height: 180px;
+        background: v.$main_color_wihte-grad;
+      }
+
       .feeling-cards__item-body {
         max-width: 560px;
         display: flex;
@@ -35,16 +84,36 @@
         align-items: start;
         gap: 10px;
 
+        @media (max-width: v.$media_md) {
+          max-width: 100%;
+          padding: 0 36px;
+        }
+
+        @media (max-width: v.$media_min) {
+          gap: 5px;
+        }
+
         .feeling-cards__item-title {
           font-size: 36px;
           font-weight: 300;
           line-height: 42px;
+
+          @media (max-width: v.$media_sm) {
+            font-size: 18px;
+            font-weight: 300;
+          }
         }
 
         .feeling-cards__item-description {
           font-size: 35px;
           font-weight: 250;
           line-height: 41px;
+
+          @media (max-width: v.$media_sm) {
+            font-size: 18px;
+            font-weight: 250;
+            line-height: 21px;
+          }
         }
       }
 
