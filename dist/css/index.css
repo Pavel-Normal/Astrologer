@@ -234,6 +234,7 @@ h6 {
 }
 .sun {
   background: url(/assets/webp/2_sun_cover.webp) center/cover no-repeat;
+  background-attachment: fixed;
 }
 .sun .sun__wrapper {
   height: 800px;
@@ -300,6 +301,97 @@ h6 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+.feeling-cards {
+  padding: 115px 0 0 0;
+}
+@media (max-width: 768px) {
+  .feeling-cards {
+    background: url(/assets/webp/3_lack_of_desires_david.webp) 100px 0%/contain no-repeat;
+  }
+}
+.feeling-cards .feeling-cards__title {
+  font-size: 72px;
+  font-weight: 300;
+  color: #f3d7b3;
+}
+.feeling-cards .feeling-cards__wrapper {
+  padding: 140px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 230px;
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body {
+  max-width: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-body .feeling-cards__item-description {
+  font-size: 35px;
+  font-weight: 250;
+  line-height: 41px;
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-img {
+  max-height: 300px;
+}
+@media (max-width: 768px) {
+  .feeling-cards .feeling-cards__wrapper .feeling-cards__item .feeling-cards__item-img {
+    display: none;
+  }
+}
+.feeling-cards .feeling-cards__wrapper .feeling-cards__item_revers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background: none;
 }
 html {
   color: #ffffff;

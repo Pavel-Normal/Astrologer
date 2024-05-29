@@ -2,6 +2,7 @@
 
 .sun {
   background: url(/assets/webp/2_sun_cover.webp) center / cover no-repeat;
+  background-attachment: fixed;
 
   .sun__wrapper {
     height: 800px;

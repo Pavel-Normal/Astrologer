@@ -1,0 +1,66 @@
+@use "variables" as v;
+
+.feeling-cards {
+  padding: 115px 0 0 0;
+  @media (max-width: v.$media_md) {
+    background: url(/assets/webp/3_lack_of_desires_david.webp) 100px 0% /
+      contain no-repeat;
+  }
+  .feeling-cards__title {
+    font-size: 72px;
+    font-weight: 300;
+    color: v.$font_color_light-orange;
+  }
+
+  .feeling-cards__wrapper {
+    padding: 140px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 230px;
+    .feeling-cards__item {
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      .feeling-cards__item-body {
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        align-items: start;
+        gap: 10px;
+
+        .feeling-cards__item-title {
+          font-size: 36px;
+          font-weight: 300;
+          line-height: 42px;
+        }
+
+        .feeling-cards__item-description {
+          font-size: 35px;
+          font-weight: 250;
+          line-height: 41px;
+        }
+      }
+
+      .feeling-cards__item-img {
+        max-height: 300px;
+
+        @media (max-width: v.$media_md) {
+          display: none;
+        }
+      }
+    }
+    .feeling-cards__item_revers {
+      flex-direction: row-reverse;
+      background: none;
+    }
+  }
+  @media (max-width: v.$media_min) {
+  }
+}
