@@ -396,7 +396,8 @@ h6 {
 @media (max-width: 768px) {
   .feeling-cards .feeling-cards__wrapper .feeling-cards__item {
     height: 250px;
-    background: rebeccapurple;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.05)), to(rgba(226, 226, 226, 0.02)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(226, 226, 226, 0.02) 100%);
   }
 }
 @media (max-width: 428px) {

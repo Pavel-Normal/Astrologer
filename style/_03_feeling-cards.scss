@@ -67,8 +67,7 @@
 
       @media (max-width: v.$media_md) {
         height: 250px;
-        //  background: v.$main_color_wihte-grad;
-        background: rebeccapurple;
+        background: v.$main_color_wihte-grad;
       }
 
       @media (max-width: v.$media_min) {
