@@ -126,7 +126,7 @@ h6 {
 }
 
 .header {
-  background: url(/assets/webp/1_sun_right_cover.webp) 100% 0%/cover no-repeat;
+  background: url(assets/webp/1_sun_right_cover.webp) 100% 0%/cover no-repeat;
 }
 .header .header__wrapper {
   height: 1024px;
@@ -290,7 +290,7 @@ h6 {
 
 @media (max-width: 768px) {
   .sun {
-    background: url(/assets/webp/2_sun_cover.webp) 30% -120px/cover no-repeat;
+    background: url(assets/webp/2_sun_cover.webp) 30% -120px/cover no-repeat;
   }
   .sun .sun__wrapper {
     height: 560px;
@@ -473,7 +473,7 @@ h6 {
   background: none;
 }
 .what-happening {
-  background: url(/assets/webp/10_shutterstock_cover.webp) center/cover no-repeat;
+  background: url(assets/webp/10_shutterstock_cover.webp) center/cover no-repeat;
   padding: 180px 0;
 }
 @media (max-width: 768px) {
