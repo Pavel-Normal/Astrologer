@@ -1,7 +1,7 @@
 @use "variables" as v;
 
 .sun {
-  background: url(assets/webp/2_sun_cover.webp) center / cover no-repeat;
+  background: url(/assets/webp/2_sun_cover.webp) center / cover no-repeat;
   background-attachment: fixed;
 
   .sun__wrapper {
@@ -52,7 +52,7 @@
 
 @media (max-width: v.$media_md) {
   .sun {
-    background: url(assets/webp/2_sun_cover.webp) 30% -120px / cover no-repeat;
+    background: url(/assets/webp/2_sun_cover.webp) 30% -120px / cover no-repeat;
 
     .sun__wrapper {
       height: 560px;
