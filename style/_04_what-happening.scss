@@ -1,0 +1,30 @@
+@use "variables" as v;
+
+.what-happening {
+  background: url(/assets/webp/10_shutterstock_cover.webp) center / cover
+    no-repeat;
+  padding: 180px 0;
+
+  @media (max-width: v.$media_md) {
+    padding: 90px 0;
+  }
+  .what-happening__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 70px;
+    .what-happening__description {
+      font-size: 47px;
+      font-weight: 700;
+      line-height: 59px;
+
+      @media (max-width: v.$media_md) {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 29px;
+      }
+    }
+  }
+}
