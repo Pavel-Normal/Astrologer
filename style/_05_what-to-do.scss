@@ -1,1 +1,89 @@
 @use "variables" as v;
+
+.what-to-do {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 40px;
+    left: 60%;
+    content: "?";
+    display: block;
+    font-size: 650px;
+    font-weight: 900;
+    opacity: 0.3;
+    text-shadow: 0px 0px 60px v.$font_color_wihte, 0px 0px 10px;
+    transform: rotate(-23deg);
+    @media (max-width: v.$media_sm) {
+      font-size: 290px;
+      top: 85px;
+      left: 55%;
+    }
+  }
+  .what-to-do__wrapper {
+    padding: 130px 0 100px 0;
+    .what-to-do__description-body {
+      padding: 0 0 100px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: flex-start;
+      justify-self: start;
+      align-items: start;
+      gap: 50px;
+      @media (max-width: v.$media_sm) {
+        gap: 25px;
+      }
+
+      .what-to-do__title {
+        color: v.$font_color_light-orange;
+        font-size: 72px;
+        font-weight: 300;
+        @media (max-width: v.$media_sm) {
+          font-size: 36px;
+        }
+      }
+
+      .what-to-do__description {
+        max-width: 860px;
+        font-size: 30px;
+        font-weight: 250;
+        line-height: 35px;
+        @media (max-width: v.$media_sm) {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+
+      .what-to-do__description_gold {
+        max-width: 760px;
+        color: v.$font_color_light-orange;
+        font-size: 30px;
+        font-weight: 400;
+        @media (max-width: v.$media_sm) {
+          font-size: 20px;
+        }
+      }
+
+      .what-to-do__description_fat {
+        max-width: 960px;
+        font-size: 30px;
+        font-weight: 700;
+        @media (max-width: v.$media_sm) {
+          font-size: 20px;
+        }
+      }
+    }
+    .what-to-do__btn {
+      color: v.$font_color_wihte;
+      background: linear-gradient(
+        131.67deg,
+        rgb(218, 193, 160) 5.464%,
+        rgb(195, 168, 133) 48.409%,
+        rgb(193, 166, 131) 96.073%
+      );
+      box-shadow: 0px 2px 0px 0px rgb(174, 146, 109),
+        inset 0px 4px 0px -2px rgba(240, 222, 198, 0.8),
+        0px 0px 100px 0px rgba(193, 166, 131, 0.6);
+    }
+  }
+}

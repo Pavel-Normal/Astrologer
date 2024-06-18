@@ -1,0 +1,189 @@
+@use "variables" as v;
+
+.get-file {
+  margin: 100px 0px 100px 0;
+
+  .get-file__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-self: start;
+    align-items: start;
+    gap: 50px;
+
+    .get-file__title {
+      margin: 0 0 140px 0;
+      color: v.$font_color_light-orange;
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+    .get-file__card-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-self: start;
+      align-items: start;
+
+      gap: 270px;
+
+      .get-file__card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-self: start;
+        align-items: start;
+
+        gap: 50px;
+
+        max-width: 100%;
+
+        .get-file__cardtitle {
+          position: relative;
+          margin: 0 0 0 100px;
+          max-width: 373px;
+
+          font-size: 30px;
+          font-weight: 700;
+
+          &::before {
+            content: "1";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: -5px;
+            left: -100px;
+
+            width: 70px;
+            height: 70px;
+            background: v.$font_color_wihte;
+            border-radius: 50%;
+            border: 2px solid v.$font_color_light-orange;
+            box-shadow: 0px 0px 30px 0px v.$font_color_light-orange;
+            inset: 0px 0px 15px 0px v.$font_color_light-orange;
+
+            color: v.$font_color_gray;
+            font-size: 40px;
+            font-weight: 700;
+          }
+        }
+
+        .get-file__cardtitle_card-2 {
+          &::before {
+            content: "2";
+          }
+        }
+
+        .get-file__cardtitle_card-3 {
+          &::before {
+            content: "3";
+          }
+        }
+
+        .get-file__cardtitle_card-4 {
+          &::before {
+            content: "4";
+            top: -20px;
+          }
+        }
+
+        .get-file__cardtitle_card-5 {
+          &::before {
+            content: "5";
+            top: -20px;
+          }
+        }
+
+        .get-file__card-body {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: flex-start;
+          justify-self: start;
+          align-items: center;
+
+          .get-file__card-desc-block {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            justify-self: start;
+            align-items: start;
+
+            gap: 30px;
+
+            .get-file__card-description {
+              font-size: 30px;
+              font-weight: 250;
+              line-height: 35px;
+              opacity: 0.8;
+            }
+
+            .get-file__card-list {
+              font-size: 30px;
+              font-weight: 250;
+              line-height: 35px;
+              opacity: 0.8;
+            }
+          }
+
+          .get-file__card-img {
+            width: 721px;
+            height: 465px;
+          }
+        }
+      }
+    }
+
+    .get-file__card-wrapper_premium {
+      justify-content: space-between;
+      column-gap: 100px;
+      .get-file__card {
+        .get-file__cardtitle {
+          max-width: 493px;
+        }
+        .get-file__card-body {
+          column-gap: 40px;
+          .get-file__card-desc-block {
+          }
+
+          .get-file__card-svg {
+            width: 665px;
+            height: 255px;
+            filter: drop-shadow(0px 0px 60px v.$font_color_light-orange);
+          }
+        }
+      }
+
+      .get-file__card_premium {
+        max-width: 499px;
+
+        .get-file__card-body {
+          .get-file__card-desc-block {
+            .get-file__card-description {
+            }
+          }
+
+          .get-file__card-img {
+            width: 167px;
+            height: 242px;
+            filter: drop-shadow(0px 0px 60px rgba(84, 253, 253, 0.7));
+          }
+
+          .get-file__card-img_tatto {
+            filter: drop-shadow(0px 0px 60px rgba(227, 52, 255, 0.69));
+          }
+        }
+        .get-file__card-body_revers {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}

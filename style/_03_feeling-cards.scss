@@ -17,7 +17,7 @@
   .feeling-cards__wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 140px 36px 0 36px;
+    padding: 140px 36px 140px 36px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -76,7 +76,7 @@
       }
 
       .feeling-cards__item-body {
-        max-width: 560px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-content: start;
@@ -107,6 +107,7 @@
           font-size: 35px;
           font-weight: 250;
           line-height: 41px;
+          opacity: 0.8;
 
           @media (max-width: v.$media_sm) {
             font-size: 18px;
